@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Timers;
 
-namespace WoT
+namespace Tanchiki_maket_
 {
     class Program
     {
