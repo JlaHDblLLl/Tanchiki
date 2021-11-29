@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Timers;
 
-namespace Tanchiki_maket_
+namespace WoT
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Traking trak = new Traking();
+            trak.Start();
         }
+
     }
 }

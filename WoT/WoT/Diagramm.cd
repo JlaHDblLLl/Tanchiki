@@ -1,45 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Tanchiki_maket_.Tanchik">
-    <Position X="12.25" Y="3.25" Width="1.5" />
+  <Class Name="WoT.Tanchik">
+    <Position X="11.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEAAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Tanchik.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Tanchiki_maket_.Gun">
-    <Position X="10" Y="3.25" Width="1.5" />
+  <Class Name="WoT.Gun">
+    <Position X="9.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAgAAAg=</HashCode>
       <FileName>Gun.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Tanchiki_maket_.Ammo_HomingMissile">
+  <Class Name="WoT.Ammo_HomingMissile">
     <Position X="6" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Ammo\Ammo_HomingMissile.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Tanchiki_maket_.Ammo_Explosive">
+  <Class Name="WoT.Ammo_Explosive">
     <Position X="4.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAIAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Ammo\Ammo_Explosive.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Tanchiki_maket_.Ammo_Default">
+  <Class Name="WoT.Ammo_Default">
     <Position X="2.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Ammo\Ammo_Default.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Tanchiki_maket_.Ammo">
+  <Class Name="WoT.Ammo">
     <Position X="4.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>Ammo\Ammo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WoT.Traking">
+    <Position X="7.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAACAAAAAAAAAAAAAAAAAIAAAIAAQAAAAAYAA=</HashCode>
+      <FileName>Traking.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

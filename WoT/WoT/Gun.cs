@@ -3,15 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Threading;
+using System.Timers;
 
-namespace Tanchiki_maket_
+namespace WoT
 {
-
-
-    
-
-    class Gun
+    public class Gun
     {
         public double Angle { get; set; }
         public int Forse { get; set; }
@@ -19,7 +15,7 @@ namespace Tanchiki_maket_
 
         public bool IsOnTarget()
         {
-            return true;           //полет снаряда по формуле 
+            return true;
         }
 
         public Gun(double angle, int forse)

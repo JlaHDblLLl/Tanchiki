@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tanchiki_maket_
+namespace WoT
 {
     class Ammo_Explosive : Ammo
     {

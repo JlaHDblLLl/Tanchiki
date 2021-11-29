@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Tanchiki_maket_
+namespace WoT
 {
     public class Ammo_HomingMissile : Ammo
     {
