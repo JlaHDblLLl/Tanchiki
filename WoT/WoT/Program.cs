@@ -7,8 +7,9 @@ namespace WoT
     {
         static void Main(string[] args)
         {
-            Traking trak = new Traking();
-            trak.Start();
+            Gun gun = new Gun(1, 10);
+            Traking.Start(gun);
+            Console.ReadLine();
         }
 
     }
