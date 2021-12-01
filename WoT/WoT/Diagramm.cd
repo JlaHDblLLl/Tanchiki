@@ -3,14 +3,14 @@
   <Class Name="WoT.Tanchik">
     <Position X="12" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEAAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAgABAAAAAAAAAAAAAAAAAQAAEAAAAAAACAAAAYAA=</HashCode>
       <FileName>Tanchik.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WoT.Gun">
-    <Position X="9.75" Y="1.25" Width="1.5" />
+    <Position X="9.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAgAAAg=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAEAAAAAAAAg=</HashCode>
       <FileName>Gun.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -42,11 +42,11 @@
       <FileName>Ammo\Ammo.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="WoT.Traking">
-    <Position X="8" Y="1" Width="1.5" />
+  <Class Name="WoT.Bullet">
+    <Position X="8" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAABAACAAAAAAAAAAAAAAAAAIAAAIAAQAAAAAYAA=</HashCode>
-      <FileName>Traking.cs</FileName>
+      <HashCode>AAQAAABAAAAAAAAAAAAAAAQAAAAAAAAIAQQBAAAAYAA=</HashCode>
+      <FileName>Bullet.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

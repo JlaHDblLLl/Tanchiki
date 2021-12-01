@@ -13,15 +13,14 @@ namespace WoT
         public int Forse { get; set; }
 
 
-        public bool IsOnTarget()
-        {
-            return true;
-        }
-
         public Gun(double angle, int forse)
         {
             Angle = angle;
             Forse = forse;
+        }
+        public Bullet Fire(double x, double y)
+        {
+            return new Bullet(x, y, this);
         }
 
     }
