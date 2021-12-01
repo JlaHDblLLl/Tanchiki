@@ -29,17 +29,18 @@ namespace WoT
             timer.AutoReset = true;
             timer.Enabled = true;
         }
-        private void Fly(Object source, System.Timers.ElapsedEventArgs e)
+        private void Fly(Object source, ElapsedEventArgs e)
         {
             t += 0.01;
             this.X = (gun.Forse * Math.Cos(gun.Angle)) * t;
             this.Y = (gun.Forse * Math.Sin(gun.Angle)) * t - g * t * t / 2;
-            this.Count--;
             Console.WriteLine($"Y: {this.Y}, X: {this.X}");
+            this.Count--;
             if (this.Count == 0) // сюда поместить IsHit
             {
                 timer.Stop();
                 timer.Dispose();
+                this.Count--;
             }
         }
     }
