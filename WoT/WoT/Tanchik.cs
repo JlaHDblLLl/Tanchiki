@@ -19,9 +19,9 @@ namespace WoT
         {
             Bullet bullet = gun.Fire(this.X, this.Y);
         }
-        public bool IsHit()
+        public bool IsHit(Tanchik tank2)
         {
-            if (gun.Fire(this.X, this.Y).X - this.X <= 10 && gun.Fire(this.X, this.Y).Y - this.Y <= 10) return true;
+            if (tank2.gun.Fire(tank2.X, tank2.Y).X - this.X <= 10 && tank2.gun.Fire(tank2.X, tank2.Y).Y - this.Y <= 10) return true;
             else return false;
         }
         public Tanchik(double x, double y, Gun gun)

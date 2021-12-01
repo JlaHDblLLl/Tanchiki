@@ -36,7 +36,7 @@ namespace WoT
             this.Y = (gun.Forse * Math.Sin(gun.Angle)) * t - g * t * t / 2;
             this.Count--;
             Console.WriteLine($"Y: {this.Y}, X: {this.X}");
-            if (this.Count == 0)
+            if (this.Count == 0) // сюда поместить IsHit
             {
                 timer.Stop();
                 timer.Dispose();
