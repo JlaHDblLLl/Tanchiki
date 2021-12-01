@@ -8,8 +8,12 @@ namespace WoT
 {
     class Tanchik
     {
+        public double X { get; set; }
+        public double Y { get; set; }
+
         public Gun gun;
         public ICollection<Ammo> ammos;
         public int HP { get; set; }
+        
     }
 }
