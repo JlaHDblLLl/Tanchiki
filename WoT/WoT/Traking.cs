@@ -6,30 +6,30 @@ using System.Timers;
 
 namespace WoT
 {
-    public static class Traking
+    public class Traking
     {
-        static double t = 0;
+        double t = 0;
         const double g = 9.8;
-        static double X;
-        static double Y;
 
 
-        static Timer timer = new Timer();
-        static Gun gun;
+        Timer timer = new Timer();
+        Gun gun;
+        Ammo ammo;
 
-        private static void OnTimedEvent(Object source, System.Timers.ElapsedEventArgs e)
+        private void OnTimedEvent(Object source, System.Timers.ElapsedEventArgs e)
         { 
             t += 0.01;
-            X = (gun.Forse * Math.Cos(gun.Angle)) * t;
-            Y = (gun.Forse * Math.Sin(gun.Angle)) * t - g * t * t / 2;
-            Console.WriteLine($"Y: {Y}, X: {X}");
+            ammo.X = (gun.Forse * Math.Cos(gun.Angle)) * t;
+            ammo.Y = (gun.Forse * Math.Sin(gun.Angle)) * t - g * t * t / 2;
+            Console.WriteLine($"Y: {ammo.Y}, X: {ammo.X}");
 
         }
 
-        public static void Start(Gun gun)
+        public void Start(Gun gun, Ammo ammo)
         {
-            Traking.gun = gun;
-            timer.Interval = 1000;
+            this.gun = gun;
+            this.ammo = ammo;
+            timer.Interval = 100;
             timer.Elapsed += OnTimedEvent;
             timer.AutoReset = true;
             timer.Start();

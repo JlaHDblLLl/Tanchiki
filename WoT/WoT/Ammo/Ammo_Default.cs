@@ -7,7 +7,7 @@ namespace WoT
 {
     public class Ammo_Default : Ammo
     {
-        public Ammo_Default() : base("HomingMissile") { }
+        public Ammo_Default() : base("Default") { }
 
         public override int GetDamage()
         {

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="WoT.Tanchik">
-    <Position X="11.75" Y="1.25" Width="1.5" />
+    <Position X="12" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEAAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Tanchik.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WoT.Gun">
-    <Position X="9.5" Y="1.25" Width="1.5" />
+    <Position X="9.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAgAAAg=</HashCode>
       <FileName>Gun.cs</FileName>
@@ -43,7 +43,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="WoT.Traking">
-    <Position X="7.25" Y="1" Width="1.5" />
+    <Position X="8" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAABAACAAAAAAAAAAAAAAAAAIAAAIAAQAAAAAYAA=</HashCode>
       <FileName>Traking.cs</FileName>

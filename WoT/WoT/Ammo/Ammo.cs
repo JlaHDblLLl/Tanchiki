@@ -9,7 +9,8 @@ namespace WoT
     {
         public int Damage;
         public string Type { get; private set; }
-
+        public double X { get; set; }
+        public double Y { get; set; }
 
         public virtual int GetDamage()
         {

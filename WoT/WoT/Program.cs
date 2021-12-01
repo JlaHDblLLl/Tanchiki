@@ -8,7 +8,9 @@ namespace WoT
         static void Main(string[] args)
         {
             Gun gun = new Gun(1, 10);
-            Traking.Start(gun);
+            Ammo_Default ammo = new Ammo_Default();
+            Traking trak = new Traking();
+            trak.Start(gun, ammo);
             Console.ReadLine();
         }
 
