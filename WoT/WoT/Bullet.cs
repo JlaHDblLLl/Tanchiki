@@ -12,6 +12,8 @@ namespace WoT
         const double g = 9.8;
         public double X { get; set; }
         public double Y { get; set; }
+        double x;
+        double y;
         public int Count { get; set; } //подумать над каунтом(как его задавать)
 
         Gun gun; // что делать с этой несостыковкой
@@ -30,10 +32,10 @@ namespace WoT
             timer.Enabled = true;
         }
         private void Fly(Object source, ElapsedEventArgs e)
-        {
+        { 
             t += 0.01;
-            this.X = (gun.Forse * Math.Cos(gun.Angle)) * t;
-            this.Y = (gun.Forse * Math.Sin(gun.Angle)) * t - g * t * t / 2;
+            this.X = (gun.Forse * Math.Cos(gun.Angle)) * t + this.x;
+            this.Y = (gun.Forse * Math.Sin(gun.Angle)) * t - g * t * t / 2 + this.y;
             Console.WriteLine($"Y: {this.Y}, X: {this.X}");
             this.Count--;
             if (this.Count == 0) // сюда поместить IsHit

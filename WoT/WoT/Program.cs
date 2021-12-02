@@ -8,7 +8,7 @@ namespace WoT
         static void Main(string[] args)
         {
             Gun gun = new Gun(1, 10);
-            Tanchik tank = new Tanchik(0, 0, gun);
+            Tanchik tank = new Tanchik(10, 10, gun);
             tank.Fire();
             Console.ReadLine();
         }
