@@ -17,13 +17,14 @@ namespace WoT
         public int Count { get; set; } //подумать над каунтом(как его задавать)
 
         Gun gun; // что делать с этой несостыковкой
-        public Ammo Type; // реализовать выбор определенного типа
 
         private Timer timer = new Timer();
         public Bullet(double x, double y, Gun gun)
         {
             this.X = x;
             this.Y = y;
+            this.x = x;
+            this.y = y;
             this.gun = gun;
 
             timer.Interval = 100;
@@ -32,7 +33,7 @@ namespace WoT
             timer.Enabled = true;
         }
         private void Fly(Object source, ElapsedEventArgs e)
-        { 
+        {
             t += 0.01;
             this.X = (gun.Forse * Math.Cos(gun.Angle)) * t + this.x;
             this.Y = (gun.Forse * Math.Sin(gun.Angle)) * t - g * t * t / 2 + this.y;
