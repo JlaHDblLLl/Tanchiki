@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="WoT.Tanchik">
-    <Position X="12" Y="1.25" Width="1.5" />
+    <Position X="12" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAgABAAAAAAAAAAAAAAAAAQAAEAAAAAAACAAAAYAA=</HashCode>
+      <HashCode>AAAAAAhAAAAAAAAAAAAAAAAAQAAEAAAAAAAAAIAAYAA=</HashCode>
       <FileName>Tanchik.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="WoT.Gun">
-    <Position X="9.75" Y="1.75" Width="1.5" />
+    <Position X="9.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAEAAAAAAAAg=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAg=</HashCode>
       <FileName>Gun.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -45,23 +46,51 @@
   <Class Name="WoT.Bullet">
     <Position X="9.75" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAABAAAAAAAAAAAAAAAQAAAAAAAAIAARhAAAAYAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAIAEAAAAAAYAA=</HashCode>
       <FileName>Bullet.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="WoT.Map">
-    <Position X="12.75" Y="5" Width="1.5" />
+    <Position X="12" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAECAAAAAAA=</HashCode>
       <FileName>Map.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="WoT.God">
-    <Position X="7.5" Y="1.5" Width="1.5" />
+  <Class Name="WoT.Player">
+    <Position X="7.75" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhAAAACAAAA=</HashCode>
-      <FileName>God.cs</FileName>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAEAAAAAEAAAAAAQAA=</HashCode>
+      <FileName>Player.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
+  <Class Name="WoT.BulletController">
+    <Position X="7.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAgAAAAAAAABAAAAAABAAAAAAAAAAEAAAAAAAAQAA=</HashCode>
+      <FileName>BulletController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WoT.Game">
+    <Position X="7.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAgAAAAAAAAAwAAAAAAIAAAACAAAAAAAAEAAQAI=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="WoT.ITick">
+    <Position X="12" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>ITick.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

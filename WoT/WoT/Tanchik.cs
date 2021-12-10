@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace WoT
 {
-    public class Tanchik
+    public class Tanchik : ITick
     {
+        const double K = 3;
+        private BulletController Bullets;
         public double X { get; set; }
-        public double Y { get; set; }
-
+        public double Y { get; set; } 
         public Gun gun;
-        public ICollection<Bullet> Bullets;
         public int HP { get; set; }
-
-        public void Fire()
+        public void Check()//проверка для езды
         {
-            gun.Fire(this.X, this.Y);
+            
         }
-        public bool IsHit(Tanchik tank_whoFire)
+        public void Fire(double x, double y)
         {
-            if (( tank_whoFire.gun.Fire(tank_whoFire.X, tank_whoFire.Y).X) - this.X <= 1 && (tank_whoFire.gun.Fire(tank_whoFire.X, tank_whoFire.Y).Y) - this.Y <= 1) return true;
-            else return false;
+            Bullet bullet = new Bullet(x, y, this);
+            Bullets.Add(bullet);
+            
         }
         public Tanchik(double x, double y, Gun gun)
         {
@@ -30,6 +30,9 @@ namespace WoT
             this.X = x;
             this.gun = gun;
         }
-
+        public void Tick(TimeSpan span)
+        {
+            X += span.Seconds * K;
+        }
     }
 }

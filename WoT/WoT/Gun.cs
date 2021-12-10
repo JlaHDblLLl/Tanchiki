@@ -18,10 +18,6 @@ namespace WoT
             Angle = angle;
             Forse = forse;
         }
-        public Bullet Fire(double x, double y)
-        {
-            return new Bullet(x, y, this);
-        }
 
     }
 }
