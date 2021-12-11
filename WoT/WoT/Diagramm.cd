@@ -1,87 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="WoT.Tanchik">
-    <Position X="12" Y="1" Width="1.5" />
+    <Position X="14" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAhAAAAAAAAAAAAAAAAAQAAEAAAAAAAAAIAAYAA=</HashCode>
+      <HashCode>AAAAgAhAAAAAAAAAAAAAAAAAQAAEAAAAAAAAAIAAYAA=</HashCode>
       <FileName>Tanchik.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="WoT.Gun">
-    <Position X="9.75" Y="1.25" Width="1.5" />
+    <Position X="12.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAg=</HashCode>
       <FileName>Gun.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WoT.Ammo_HomingMissile">
-    <Position X="6" Y="3.5" Width="1.5" />
+    <Position X="4" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Ammo\Ammo_HomingMissile.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WoT.Ammo_Explosive">
-    <Position X="4.25" Y="3.5" Width="1.5" />
+    <Position X="2.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAIAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Ammo\Ammo_Explosive.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WoT.Ammo_Default">
-    <Position X="2.5" Y="3.5" Width="1.5" />
+    <Position X="0.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Ammo\Ammo_Default.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WoT.Ammo">
-    <Position X="4.25" Y="0.5" Width="1.5" />
+    <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>Ammo\Ammo.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="WoT.Bullet">
-    <Position X="9.75" Y="4" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAIAEAAAAAAYAA=</HashCode>
-      <FileName>Bullet.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
   <Class Name="WoT.Map">
-    <Position X="12" Y="4.75" Width="1.5" />
+    <Position X="8.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAECAAAAAAA=</HashCode>
       <FileName>Map.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WoT.Player">
-    <Position X="7.75" Y="1.25" Width="1.5" />
+    <Position X="5.75" Y="0.75" Width="1.5" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAEAAAAAEAAAAAAQAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAEAAAAAAQAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="WoT.BulletController">
-    <Position X="7.75" Y="3.75" Width="1.5" />
+    <Position X="10.25" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAgAAAAAAAABAAAAAABAAAAAAAAAAEAAAAAAAAQAA=</HashCode>
+      <HashCode>AAIAgAgAAAAAABAAAAAABAAAAAAAAAAEAAAAAAAAQAA=</HashCode>
       <FileName>BulletController.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="WoT.Game">
-    <Position X="7.75" Y="6.75" Width="1.5" />
+    <Position X="5.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAgAAAAAAAAAwAAAAAAIAAAACAAAAAAAAEAAQAI=</HashCode>
       <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WoT.Bullet">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAQAAAAAAAAIAAAAAAAAYAA=</HashCode>
+      <FileName>Bullet.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>

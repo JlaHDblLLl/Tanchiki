@@ -17,8 +17,8 @@ namespace WoT
         {
             WorldTime = new TimeSpan(0, 0, 0);
 
-            Tanchik Tank1 = new Tanchik(10, 10, new Gun(0, 0));
-            Tanchik Tank2 = new Tanchik(10, 100, new Gun(0, 0));
+            Tanchik Tank1 = new Tanchik(10, 10, new Gun(0, 0), Bullets);
+            Tanchik Tank2 = new Tanchik(10, 100, new Gun(0, 0), Bullets);
             Player1 = new Player(Tank1);
             Player2 = new Player(Tank2);
 

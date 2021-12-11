@@ -34,8 +34,8 @@ namespace WoT
         }
         public void Check(Tanchik tank) //Нужен рабочий Мап
         {
-            if () ;
-            else ;
+            //if () ;
+            //else ;
         }
 
         //private void Fly(Object source, ElapsedEventArgs e)

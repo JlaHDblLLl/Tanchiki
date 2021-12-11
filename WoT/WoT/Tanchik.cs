@@ -24,11 +24,12 @@ namespace WoT
             Bullets.Add(bullet);
             
         }
-        public Tanchik(double x, double y, Gun gun)
+        public Tanchik(double x, double y, Gun gun, BulletController bullets)
         {
             this.Y = y;
             this.X = x;
             this.gun = gun;
+            this.Bullets = bullets;
         }
         public void Tick(TimeSpan span)
         {

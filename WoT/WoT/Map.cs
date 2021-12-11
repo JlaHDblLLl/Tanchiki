@@ -2,31 +2,32 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Drawing;
 namespace WoT
 {
     
-    public static class Map
+    public class Map
     {
-        static public List<Tuple<double, double>> Points;
-        static public bool IsHit(Bullet bullet, Tanchik tank)
+        public List<Point> Points;
+        public bool IsHit(Bullet bullet, Tanchik tank)
         {
             return true;
 
         }
-        static Map()
+        public Map()
         {
-            Points.Add(new Tuple<double, double>(0, 1));
-            Points.Add(new Tuple<double, double>(1, 1));
-            Points.Add(new Tuple<double, double>(3, 3));
-            Points.Add(new Tuple<double, double>(5, 5));
-            Points.Add(new Tuple<double, double>(7, 5));
-            Points.Add(new Tuple<double, double>(9, 4));
-            Points.Add(new Tuple<double, double>(11, 1));
-            Points.Add(new Tuple<double, double>(13, 7));
-            Points.Add(new Tuple<double, double>(15, 7));
-            Points.Add(new Tuple<double, double>(17, 6));
+            Points.Add(new Point(0,1));
+            Points.Add(new Point(1, 1));
+            Points.Add(new Point(3, 3));
+            Points.Add(new Point(5, 5));
+            Points.Add(new Point(7, 5));
+            Points.Add(new Point(9, 4));
+            Points.Add(new Point(11, 1));
+            Points.Add(new Point(13, 7));
+            Points.Add(new Point(15, 7));
+            Points.Add(new Point(17, 6));
         }
-        static double Funk(double x, List<Tuple<double, double>> points)
+        public double Funk(double x, List<Point> points)
         {
             Tuple<double, double> t1 = null;
             Tuple<double, double> t2 = null;
