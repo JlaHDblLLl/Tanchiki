@@ -8,44 +8,40 @@ namespace WoT
     
     public class Map
     {
-        public List<Point> Points;
-        public bool IsHit(Bullet bullet, Tanchik tank)
-        {
-            return true;
+        private List<Point> Points = new List<Point>();
 
-        }
         public Map()
         {
             Points.Add(new Point(0,1));
             Points.Add(new Point(1, 1));
             Points.Add(new Point(3, 3));
-            Points.Add(new Point(5, 5));
-            Points.Add(new Point(7, 5));
+            Points.Add(new Point(5, 4));
+            Points.Add(new Point(7, 6));
             Points.Add(new Point(9, 4));
             Points.Add(new Point(11, 1));
             Points.Add(new Point(13, 7));
             Points.Add(new Point(15, 7));
             Points.Add(new Point(17, 6));
         }
-        public double Funk(double x, List<Point> points)
+        public double Funk(double x)
         {
-            Tuple<double, double> t1 = null;
-            Tuple<double, double> t2 = null;
+            Point t1 = new Point();
+            Point t2 = new Point();
             for (int i = 0; i < 9; i++)
             {
-                if (x >= points[i].Item1)
+                if (x >= Points[i].X)
                 {
-                    t1 = points[i];
-                    t2 = points[i + 1];
+                    t1 = Points[i];
+                    t2 = Points[i + 1];
                     break;
                 }
-                else
-                {
-                    throw new Exception("Вышло за пределы");
-                }
             }
-            double y = ((x - t1.Item1) * (t2.Item2 - t1.Item1)) / (t2.Item1 - t1.Item1);
+            double y = ((x - t1.X) * (t2.Y - t1.Y)) / (t2.X - t1.X) + t1.Y;
             return y;
+        }
+        public void Check()
+        {
+
         }
     }
    

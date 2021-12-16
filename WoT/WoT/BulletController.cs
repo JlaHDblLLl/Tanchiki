@@ -37,11 +37,26 @@ namespace WoT
                 b.Tick(span);
             }
         }
+        public void Check(Map map)
+        {
+            int i = 0;
+            while( i < Bullets.Count )
+            {
+                int temp = Bullets.Count;
+                Bullets.ElementAt(i).Check(map, Bullets);
+
+                i = temp == Bullets.Count ? i+1 : i;
+            }
+        }
+
         public void Check(Tanchik tank)
         {
-            foreach(var b in Bullets)
+            int i = 0;
+            while (i < Bullets.Count)
             {
-                b.Check(tank);
+                int temp = Bullets.Count;
+                Bullets.ElementAt(i).Check(tank, Bullets);
+                i = temp == Bullets.Count ? i + 1 : i;
             }
         }
 

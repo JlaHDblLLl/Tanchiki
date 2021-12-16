@@ -33,7 +33,7 @@ namespace WoT
         }
         public void Tick(TimeSpan span)
         {
-            X += span.Seconds * K;
+            //X += span.Seconds * K;
         }
     }
 }
