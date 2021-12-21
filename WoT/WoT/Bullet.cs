@@ -7,11 +7,14 @@ namespace WoT
 {
     public class Bullet : ITick
     {
+
+        double t;
         const double g = 9.8;
         public double X { get; set; }
-        public double BeginX { get; set; }
+        public double BeginX;
         public double Y { get; set; }
-        public double BeginY { get; set; }
+        public double BeginY;
+
         public int Count { get; set; } //подумать над каунтом(как его задавать)
 
         Tanchik TankWhoShoot;
@@ -19,17 +22,24 @@ namespace WoT
         public Bullet(Tanchik tank)
         {
             this.X = tank.X;
+            this.BeginX = tank.X;
             this.Y = tank.Y;
+            this.BeginY = tank.Y;
             this.TankWhoShoot = tank;
+            this.t = 0;
         }
 
         public void Tick(TimeSpan span)
         {
-            double t = (double)(span.Seconds + span.Milliseconds / 1000.0);
-            this.X += (TankWhoShoot.gun.Force * Math.Cos(TankWhoShoot.gun.Angle)) * t;
-            this.Y += (TankWhoShoot.gun.Force * Math.Sin(TankWhoShoot.gun.Angle)) * t - g * t * t / 2;
+            double SpeedX = TankWhoShoot.gun.Force * Math.Cos(TankWhoShoot.gun.Angle);
+            double SpeedY = TankWhoShoot.gun.Force * Math.Sin(TankWhoShoot.gun.Angle);
+            t += (double)(span.Seconds + span.Milliseconds / 1000.0);
+            double x = SpeedX * t;
+            double y = SpeedY * t - g * t * t / 2;
+            this.X = this.BeginX + x;
+            this.Y = this.BeginY + y;
 
-            Console.WriteLine($"{this.X}, {this.Y}");
+            //Console.WriteLine($"{this.X}, {this.Y}");
         }
         public void Check(Map map, ICollection<Bullet> bulcontr) 
         {

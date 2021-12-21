@@ -18,7 +18,7 @@ namespace WoT
         {
             
         }
-        public void Fire(double x, double y)
+        public void Fire()
         {
             Bullet bullet = new Bullet(this);
             Bullets.Add(bullet);

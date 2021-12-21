@@ -13,7 +13,7 @@ namespace WoT
         }
         public void Fire()
         {
-            Tank.Fire(Tank.X, Tank.Y);
+            Tank.Fire();
         }
 
         public void Tick(TimeSpan span)

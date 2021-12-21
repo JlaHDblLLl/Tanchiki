@@ -18,16 +18,16 @@ namespace WoT
         {
             WorldTime = new TimeSpan(0, 0, 0);
 
-            Tanchik Tank1 = new Tanchik(1, 1, new Gun(0.785398, 1), Bullets);
-            Tanchik Tank2 = new Tanchik(11, 1, new Gun(2.35619, 10), Bullets);
+            Tanchik Tank1 = new Tanchik(3, 3, new Gun(1, 10), Bullets);
+            Tanchik Tank2 = new Tanchik(14, 7, new Gun(2.35619, 10), Bullets);
             Player1 = new Player(Tank1);
             Player2 = new Player(Tank2);
             //Player1.Fire();
-            Player2.Fire();
-            for (int i = 0; i < 1000000; i++)
-            {
-                Tick(detT);
-            }
+            //Player2.Fire();
+            //for (int i = 0; i < 1000000; i++)
+            //{
+            //    Tick(detT);
+            //}
 
         }
 
@@ -40,7 +40,7 @@ namespace WoT
             Bullets.Tick(span);
 
             // check conditions
-            //Check();
+            Check();
         }
 
 
@@ -60,9 +60,9 @@ namespace WoT
         }
         public Game()
         {
-            //timer.Interval = 100;
-            //timer.Elapsed += OnTick;
-            //timer.Enabled = true;
+            timer.Interval = 10;
+            timer.Elapsed += OnTick;
+            timer.Enabled = true;
             //this.Run();
         }
 
