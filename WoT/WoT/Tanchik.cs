@@ -20,7 +20,7 @@ namespace WoT
         }
         public void Fire(double x, double y)
         {
-            Bullet bullet = new Bullet(x, y, this);
+            Bullet bullet = new Bullet(this);
             Bullets.Add(bullet);
             
         }

@@ -8,7 +8,7 @@ namespace WoT
 {
     public class Game : ITick
     {
-        readonly TimeSpan detT = new TimeSpan(0,0,0,0,1);
+        readonly TimeSpan detT = new TimeSpan(0,0,0,0,100);
         TimeSpan WorldTime;
         Player Player1, Player2;
         Map map = new Map();
@@ -18,13 +18,13 @@ namespace WoT
         {
             WorldTime = new TimeSpan(0, 0, 0);
 
-            Tanchik Tank1 = new Tanchik(4, 5, new Gun(1, 1), Bullets);
-            Tanchik Tank2 = new Tanchik(14, 7, new Gun(2.5, 1), Bullets);
+            Tanchik Tank1 = new Tanchik(1, 1, new Gun(0.785398, 1), Bullets);
+            Tanchik Tank2 = new Tanchik(11, 1, new Gun(2.35619, 10), Bullets);
             Player1 = new Player(Tank1);
             Player2 = new Player(Tank2);
-            Player1.Fire();
+            //Player1.Fire();
             Player2.Fire();
-            for (int i = 0; i < 1000; i++)
+            for (int i = 0; i < 1000000; i++)
             {
                 Tick(detT);
             }
@@ -40,7 +40,7 @@ namespace WoT
             Bullets.Tick(span);
 
             // check conditions
-            Check();
+            //Check();
         }
 
 

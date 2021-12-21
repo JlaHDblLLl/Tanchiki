@@ -9,37 +9,37 @@ namespace WoT
     {
         const double g = 9.8;
         public double X { get; set; }
+        public double BeginX { get; set; }
         public double Y { get; set; }
+        public double BeginY { get; set; }
         public int Count { get; set; } //подумать над каунтом(как его задавать)
 
         Tanchik TankWhoShoot;
 
-        public Bullet(double x, double y, Tanchik tank)
+        public Bullet(Tanchik tank)
         {
             this.X = tank.X;
             this.Y = tank.Y;
             this.TankWhoShoot = tank;
-
-            //timer.Interval = 100;
-            //timer.Elapsed += Fly;
-            //timer.AutoReset = true;
-            //timer.Enabled = true;
         }
 
         public void Tick(TimeSpan span)
         {
-            this.X += (TankWhoShoot.gun.Forse * Math.Cos(TankWhoShoot.gun.Angle)) * span.Seconds/*что будет если изменить спан*/ ;
-            this.Y += (TankWhoShoot.gun.Forse * Math.Sin(TankWhoShoot.gun.Angle)) * span.Seconds - g * span.Seconds * span.Seconds / 2;
+            double t = (double)(span.Seconds + span.Milliseconds / 1000.0);
+            this.X += (TankWhoShoot.gun.Force * Math.Cos(TankWhoShoot.gun.Angle)) * t;
+            this.Y += (TankWhoShoot.gun.Force * Math.Sin(TankWhoShoot.gun.Angle)) * t - g * t * t / 2;
+
+            Console.WriteLine($"{this.X}, {this.Y}");
         }
         public void Check(Map map, ICollection<Bullet> bulcontr) 
         {
             double y = map.Funk(X);
-            if (y <= this.Y) 
+            if (y >= this.Y) 
             {
                 Console.WriteLine("Popal v map");
                 bulcontr.Remove(this);
             }
-            else if(this.Y < 0)
+            else if(y < 0)
             {
                 Console.WriteLine("Yletel");
                 bulcontr.Remove(this);
@@ -47,7 +47,7 @@ namespace WoT
         }
         public void Check(Tanchik tank, ICollection<Bullet> bulcontr)
         {
-            if (Math.Abs(tank.Y - this.Y) <= 1 && Math.Abs(tank.X - this.X) <= 1)
+            if (Math.Abs(tank.Y - this.Y) <= 1 && Math.Abs(tank.X - this.X) <= 1 && this.TankWhoShoot != tank)
             {
                 Console.WriteLine("Popal v Tank");
                 bulcontr.Remove(this);
