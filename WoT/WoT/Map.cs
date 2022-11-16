@@ -12,18 +12,18 @@ namespace WoT
 
         public Map()
         {
-            Points.Add(new Point(0, 1));
-            Points.Add(new Point(1, 1));
-            Points.Add(new Point(3, 3));
-            Points.Add(new Point(5, 4));
-            Points.Add(new Point(7, 6));
-            Points.Add(new Point(9, 4));
-            Points.Add(new Point(11, 1));
-            Points.Add(new Point(13, 7));
-            Points.Add(new Point(15, 7));
-            Points.Add(new Point(17, 6));
             //Points.Add(new Point(0, 1));
-            //Points.Add(new Point(17, 1));
+            //Points.Add(new Point(1, 1));
+            //Points.Add(new Point(3, 3));
+            //Points.Add(new Point(5, 4));
+            //Points.Add(new Point(7, 6));
+            //Points.Add(new Point(9, 4));
+            //Points.Add(new Point(11, 1));
+            //Points.Add(new Point(13, 7));
+            //Points.Add(new Point(15, 7));
+            //Points.Add(new Point(17, 6));
+            Points.Add(new Point(0, 1));
+            Points.Add(new Point(17, 1));
         }
         public double Funk(double x)
         {

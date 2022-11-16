@@ -11,7 +11,7 @@
   <Class Name="WoT.Gun">
     <Position X="12.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAg=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAIAAA=</HashCode>
       <FileName>Gun.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -46,7 +46,7 @@
   <Class Name="WoT.Map">
     <Position X="8.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAECAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
       <FileName>Map.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -62,7 +62,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="WoT.BulletController">
-    <Position X="10.25" Y="4" Width="1.5" />
+    <Position X="8.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAgAgAAAAAABAAAAAABAAAAAAAAAAEAAAAAAAAQAA=</HashCode>
       <FileName>BulletController.cs</FileName>
@@ -72,7 +72,7 @@
   <Class Name="WoT.Game">
     <Position X="5.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAgAgAAAAAAAAAwAAAAAAIAAAACAAAAAAAAEAAQAI=</HashCode>
+      <HashCode>AAQAkAgAAAAAAAAAwAAAAAAIAAAACAAAAAAAAEAAQAI=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -80,7 +80,7 @@
   <Class Name="WoT.Bullet">
     <Position X="10.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAgAAAAAAAAAAAAAAAQAAAAAAAAIAAAAAAAAYAA=</HashCode>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAQAAAAAEAAIAAQAAAAAYAA=</HashCode>
       <FileName>Bullet.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />

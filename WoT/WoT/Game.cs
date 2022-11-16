@@ -22,12 +22,12 @@ namespace WoT
             Tanchik Tank2 = new Tanchik(14, 7, new Gun(2.35619, 10), Bullets);
             Player1 = new Player(Tank1);
             Player2 = new Player(Tank2);
-            //Player1.Fire();
-            //Player2.Fire();
-            //for (int i = 0; i < 1000000; i++)
-            //{
-            //    Tick(detT);
-            //}
+            Player1.Fire();
+            Player2.Fire();
+            for (int i = 0; i < 1000000; i++)
+            {
+                Tick(detT);
+            }
 
         }
 
